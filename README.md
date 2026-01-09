@@ -37,8 +37,6 @@ python -m uvicorn app.main:app --reload
 > Usar `python -m uvicorn` é mais robusto quando `uvicorn` não está no PATH.
 
 ## Endpoints úteis
-
-- Documentação interativa (Swagger): http://127.0.0.1:8000/docs
 - Upload de arquivo: `POST /upload` (form field `file`)
 - Relatórios:
   - `GET /reports/sales-summary`
@@ -72,10 +70,6 @@ curl "http://127.0.0.1:8000/reports/financial-metrics?version=666c0b3465d0475aba
 - Mantenha os arquivos `.parquet` se quiser que as versões continuem acessíveis via API (`GET /reports/...`).
 
 ---
-Mais exemplos e instruções estão disponíveis em `docs/`.
-# hanami-2025
-
-Projeto de exemplo para processar arquivos CSV/XLSX e gerar relatórios analíticos.
 
 ## Requisitos
 
@@ -105,7 +99,6 @@ uvicorn app.main:app --reload
 
 4. Endpoints:
 
-- Documentação interativa: `http://127.0.0.1:8000/docs`
 - Upload: `POST /upload` (form field `file`)
 
 ## Estrutura inicial
