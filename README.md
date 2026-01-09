@@ -9,14 +9,7 @@ Projeto de exemplo para processar arquivos CSV/XLSX e gerar relatórios analíti
 
 ## Instalação (Windows)
 
-1. Crie e ative um ambiente virtual:
-
-```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-```
-
-2. Instale dependências:
+1. Instale dependências:
 
 ```powershell
 pip install -r requirements.txt
@@ -28,7 +21,7 @@ Observação: a escrita em formato Parquet depende de um engine opcional (`pyarr
 pip install pyarrow
 ```
 
-3. Rodar a aplicação (desenvolvimento):
+2. Rodar a aplicação (desenvolvimento):
 
 ```powershell
 python -m uvicorn app.main:app --reload
