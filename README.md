@@ -119,4 +119,5 @@ uvicorn app.main:app --reload
 
 - A API usa `pandas` para leitura e validação dos arquivos.
 - Logs são gravados em `logs/app.log`.
+- status: em andamento.
 # hanami-2025
